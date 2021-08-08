@@ -1,0 +1,17 @@
+:Scanner="\nOFF" :OS1Reset=1 if :OS1==0 then goto 1 end
+:Scanner="\nScanning."
+:Scanner="\nScanning.."
+:Scanner="\nScanning..."
+if :OS1Results>0  then goto 8 else if :OS1==0 then goto 1 end end
+:OS1On=1 goto 2
+// delay
+:OS1Index=0 s="\n" if :OS1==0 then goto 8 end
+// delay
+// delay
+// delay
+// delay
+:OS1=0
+v=:OS1Vol s=s+:OS1Mat+"\n"+v+"\n" :OS1Index++
+if :OS1Index<:OS1Results then goto 14 end :Scanner=s :OS1On=0 goto 17
+// delay
+:OS1Index=0 s="\n" if :OS1==0 then goto 17 end goto 1
