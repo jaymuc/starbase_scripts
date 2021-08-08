@@ -1,4 +1,4 @@
-# starbase_scanner_script
+# mining_scanner.txt
 
 name your scanner and all variables to: OS1+varname like this:
 
